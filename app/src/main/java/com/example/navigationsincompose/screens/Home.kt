@@ -2,6 +2,7 @@ package com.example.navigationsincompose.screens
 
 import android.graphics.drawable.Icon
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -58,7 +59,7 @@ fun Home (navController: NavHostController?= null) {
         LazyColumn{
             var i = 1;
             items((1..4).toList()) {
-                TaskCard(task = "Item ${i++}")
+                TaskCard(task = "Item ${i++}", navController)
             }
         }
     }
@@ -72,7 +73,9 @@ fun TaskCard(task: String, navController: NavHostController? = null) {
         modifier = Modifier
             .fillMaxWidth()
             .wrapContentHeight()
-            .padding(top = 8.dp, start = 8.dp, end = 8.dp, bottom = 8.dp)
+            .padding(top = 8.dp, start = 8.dp, end = 8.dp, bottom = 8.dp).clickable {
+                navController?.navigate("task")
+            }
     )    {
         Row (
             modifier = Modifier.padding(10.dp),
