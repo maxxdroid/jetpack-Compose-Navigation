@@ -21,7 +21,7 @@ fun MainContent() {
                 Home(navController)
             }
             composable("task") {
-
+                Task(navController)
             }
         }
     }
