@@ -22,15 +22,9 @@ fun MainContent() {
             composable("home") {
                 Home(navController)
             }
-            composable("settings") {
-                Home(navController)
-            }
-            composable("travel") {
-                TravelHome(navController)
-            }
             composable("task?item={item}", arguments = listOf(navArgument("item"){
                 type = NavType.StringType
-                defaultValue = "Item     not Available"
+                defaultValue = "Item not Available"
                 nullable = true
             }) ) {
                 val item = it.arguments?.getString("item")
