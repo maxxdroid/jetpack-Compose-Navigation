@@ -1,4 +1,4 @@
-package com.example.navigationsincompose
+package com.example.navigationsincompose.pages
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
@@ -11,19 +11,19 @@ sealed class BottomBarScreen (
     val title: String,
     val icon: ImageVector
 ) {
-    object Home : BottomBarScreen(
+    data object Home : BottomBarScreen(
         route = "Home",
         title = "Home",
         icon = Icons.Default.Home
     )
 
-    object Profile : BottomBarScreen(
+    data object Profile : BottomBarScreen(
         route = "Profile",
         title = "Profile",
         icon = Icons.Default.Person
     )
 
-    object Settings : BottomBarScreen(
+    data object Settings : BottomBarScreen(
         route = "Settings",
         title = "Settings",
         icon = Icons.Default.Settings

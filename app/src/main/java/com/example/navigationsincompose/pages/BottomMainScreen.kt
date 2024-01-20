@@ -15,7 +15,6 @@ import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.navigationsincompose.BottomBarScreen
 
 //@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")

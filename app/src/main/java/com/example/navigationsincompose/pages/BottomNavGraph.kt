@@ -1,11 +1,9 @@
 package com.example.navigationsincompose.pages
 
 import androidx.compose.runtime.Composable
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.navigationsincompose.BottomBarScreen
 
 @Composable
 fun BottomNavGraph(navController: NavHostController) {

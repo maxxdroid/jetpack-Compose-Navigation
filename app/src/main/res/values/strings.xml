@@ -5,5 +5,7 @@
     <string name="fav">Favourites</string>
     <string name="feed">Feed</string>
     <string name="profile">Profile</string>
+    <string name="hello">Hey There,</string>
+    <string name="terms_and_conditions">By continuing you accept our Privacy Policy and Term of Use</string>
 
 </resources>
